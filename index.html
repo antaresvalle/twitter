@@ -26,20 +26,21 @@
 	</header>
 	<main>
 		<aside class="as-left">
-			<h2>Reto de codigo</h2>
+			<h2>Reto de código</h2>
 			<img src="assets/images/L_bck_yellow.png">
 			<p>@antares_valle</p>
 		</aside>
 		<section id="main-container">
 			<div id="tweet-box">
-				<img src="assets/images/L_bck_yellow.png">
+				<img class="img-profile-twt" src="assets/images/L_bck_yellow.png">
 				<div id="tweet-area">
-					<textarea id="textarea-tweet" rows="8" cols="75" maxlength="50"></textarea>
+					<textarea id="textarea-tweet" maxlength="140" placeholder="What's happening?"></textarea>
 				</div>
-				<p></p>
-				<button id="tweet" class="btn-tweet btn-tweet-dwn">Tweet</button>
+				<div id="btn-counter-box">
+					<p id="contador">140</p>
+					<button id="tweet" class="btn-tweet btn-tweet-dwn">Tweet</button>
+				</div>
 			</div>
-			<div id="tweet-container"></div>
 		</section>
 	</main>
 	<script type="text/javascript" src="js/app.js"></script>

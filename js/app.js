@@ -15,16 +15,22 @@ tweet.addEventListener('click', function(){
 	// agregar el texto al html
 
 	// crear div contenedor del texto
-	var tweetContainer = document.getElementById('tweet-container');
+	var tweetContainer = document.getElementById('main-container');
 
-	var tweetContent = document.createElement('p');
+	var tweetContent = document.createElement('div');
+	tweetContent.id = 'tweet-container';
+	var tweetContentP = document.createElement('p');
 	var tweetTxt = document.createTextNode(getTextTweet);
 
-	tweetContent.appendChild(tweetTxt);
+	
+	tweetContentP.appendChild(tweetTxt);
+	tweetContent.appendChild(tweetContentP);
 	tweetContainer.appendChild(tweetContent);
-	tweetContent.value = getTextTweet;
-	tweetContent.style.padding = "3em";
+	tweetContentP.value = getTextTweet;
+	tweetContentP.style.padding = "3em";
 	console.log(tweetContent);
+
+	inputTweet.value = '';
 
 
 

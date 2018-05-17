@@ -20,7 +20,7 @@ button {
 	cursor: pointer;
 }
 
-/* --------- NAV ---------- */
+	/* --------- NAV ---------- */
 
 nav {
 	padding: 0 15em;
@@ -99,7 +99,7 @@ main {
 aside {
 	background-color: white;
 	width: 33%;
-	height: 14em;
+	height: 12em;
 	display: inline-block;
 	top: 0;
 	padding: 1em 2em;
@@ -109,27 +109,29 @@ aside {
 
 section {
 	height: 40em;
-	width: 58%;
-	/*background-color: white;*/
+	width: 63%;
 	position: relative;
 	display: inline-block;
 	margin: 0 0.5em;
 	box-sizing: border-box;
 }
 
+/* --------- TWEET BOX ---------- */
+
 div#tweet-box {
 	background-color: #fbeef1;
 	position: relative;
 	width: 100%;
-	height: 10em;
+	height: 12em;
 	display: inline-block;
 	padding: 2em;
+	box-sizing: border-box;
 }
 
 div#tweet-area {
-	height: 7em;
+	height: 5em;
 	position: relative;
-	width: 70%;
+	width: 85%;
 	border: 2px solid #EFBBC8;
 	border-radius: 8px;
 	background-color: white;
@@ -141,10 +143,31 @@ img {
 	border-radius: 100%;
 }
 
+img.img-profile-twt {
+	position: relative;
+	bottom: 1.1em;
+	margin-right: 0.2em;
+}
+
 textarea {
 	border: none;
+	font-size: 1em;
 	resize: none;
 	outline: none;
+	margin: 0.2em;
+	margin-bottom: 0;
+	width: 95%;
+    height: 4em;
+}
+
+div#btn-counter-box {
+    width: 94%;
+    text-align: right;
+}
+
+p#contador {
+	display: inline-block;
+	margin-right: 0.2em;
 }
 
 button.btn-tweet {
@@ -163,7 +186,6 @@ button.btn-tweet:hover{
 
 .btn-tweet-dwn {
 	position: relative;
-	left: 30em;
 }
 
 /* --------- TWEET-DISPLAY ---------- */
@@ -171,3 +193,7 @@ button.btn-tweet:hover{
 div#tweet-container {
 	background-color: white;
 }	
+
+div#tweet-container p {
+	word-wrap: break-word;
+}
