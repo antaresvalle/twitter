@@ -18,23 +18,26 @@ Este reto tiene como objetivo replicar el newsfeed de Twitter, a través de un f
 ## Flujo de versiones
 
 *  **VERSIÓN 0.0.1**
-	1. Se mostrará el texto "Añadir una lista ...".
-	2. Al hacer click se debe ocultar el texto y mostrar un formulario.
-	3. El formulario está conformado por un input y un botón para que pueda añadir tareas a tu lista.
+	1. Diseñar un formulario que permita ingresar un texto y un botón para "twittear".
+	2. Agregar un evento de click al botón o de submit al formulario.
+	3. En el evento, obtener el texto.
+	4. Agregar el texto al HTML.
 
 *  **VERSIÓN 0.0.2**
-	1. Al dar click en el botón de "Guardar", se mostrará un nuevo cuadro donde estará el nombre de la lista agregada.
-	2. Mostrar un texto de "Añadir una tarea" dentro de la lista.
+	1. No ingresar texto vacío (deshabilitar el botón de "twittear").
+	2. Contar la cantidad de caracteres de forma regresiva.
 
 *  **VERSIÓN 0.0.3**
-	1. Al dar click en "Añadir una tarea", deberá mostrar un formulario con un textarea y un botón que diga "Añadir".
+	1. Si pasa los 140 caracteres, deshabilitar el botón.
+	2. Si pasa los 120 caracteres, mostrar el contador con OTRO color.
+	3. Si pasa los 130 caracteres, mostrar el contador con OTRO color.
+	4. Si pasa los 140 caracteres, mostrar el contador en negativo.
 
 *  **VERSIÓN 0.0.4**
-	1. Poner focus al input al dar click en "Agregar nueva tarea".
-	2. Al dar click en el botón de "Añadir", deberá aparecer el texto de la tarea debajo del título de la lista.
+	1. Al presionar enter(/n) que crezca el textarea de acuerdo al tamaño del texto.
 
-*  **VERSIÓN 0.0.5**
-	1. Mostrar el formulario nuevamente debajo de la última tarea añadida.
+*  **VERSIÓN 0.0.5 (Extra)**
+	1. Si la cantidad de caracteres ingresados (sin dar un enter), supera al tamaño del textarea por defecto, debe de agregarse una línea más para que no aparezca el scroll. (Si en caso aplica).
 
 *  **VERSIÓN 0.0.6 (EXTRA)**
-	1. Poder agregar múltiples listas con tarjetas. Para esto, el formulario de "Añadir una lista" debe aparecer a la derecha de la lista anteriormente creada.
+	1. Agregar la hora en que se publicó el tweet. En el formato de 24 horas: hh:mm.
