@@ -1,0 +1,173 @@
+body {
+	background-color: #e6ecf0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* --------- HEADER ---------- */
+
+header {
+	background-color: white;
+	height: 3em;
+	display: inline-block;
+	width: 100%;
+	/*position: fixed;*/
+	z-index: 1;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* --------- NAV ---------- */
+
+nav {
+	padding: 0 15em;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #66757f;
+	margin-right: 1.8em; 
+	padding: 0.8em 0;
+}
+
+a:hover {
+	color: #d95577;
+}
+
+a i.far {
+	margin-right: 0.3em;
+	font-size: 1.4em;
+}
+
+div#logo {
+	color: #1da1f2;
+	font-size: 1.3em;
+	display: inline-block;
+	margin-top: 0.4em;
+	width: 16%;
+	text-align: center;
+}
+
+i.fab.fa-twitter:hover {
+	color: #1b91da;
+	cursor: pointer;
+}
+
+
+div#menu-left {
+	display: inline-block;
+	height: 80%;
+	width: 40%;
+	font-size: 0.8em;
+}
+
+div#menu-right {
+	display: inline-block;
+	height: 100%;
+	width: 40%;
+	text-align: right;
+}
+
+div#menu-right input {
+	background-color: #f5f8fa;
+	border-radius: 21px;
+	border: 1px solid #e6ecf0;
+	height: 2.2em;
+	width: 16em;
+	outline: none;
+	padding-left: 2em; 
+}
+
+a.profile {
+	border-radius: 100%;
+	height: 2.3em;
+	width: 2.3em;
+	padding: 0;
+}
+
+/* --------- MAIN ---------- */
+
+main {
+	padding: 0.8em 15em;
+	display: flex;
+}
+
+aside {
+	background-color: white;
+	width: 33%;
+	height: 14em;
+	display: inline-block;
+	top: 0;
+	padding: 1em 2em;
+    box-sizing: border-box;
+}
+
+
+section {
+	height: 40em;
+	width: 58%;
+	/*background-color: white;*/
+	position: relative;
+	display: inline-block;
+	margin: 0 0.5em;
+	box-sizing: border-box;
+}
+
+div#tweet-box {
+	background-color: #fbeef1;
+	position: relative;
+	width: 100%;
+	height: 10em;
+	display: inline-block;
+	padding: 2em;
+}
+
+div#tweet-area {
+	height: 7em;
+	position: relative;
+	width: 70%;
+	border: 2px solid #EFBBC8;
+	border-radius: 8px;
+	background-color: white;
+	display: inline-block;
+}
+
+img {
+	width: 8%;
+	border-radius: 100%;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	outline: none;
+}
+
+button.btn-tweet {
+	background-color: #E07692;
+	padding: 0.5em 1em;
+	color: white;
+	font-size: 1em;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+}
+
+button.btn-tweet:hover{
+	background-color: #ce6e87;
+}
+
+.btn-tweet-dwn {
+	position: relative;
+	left: 30em;
+}
+
+/* --------- TWEET-DISPLAY ---------- */
+
+div#tweet-container {
+	background-color: white;
+}	
