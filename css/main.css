@@ -168,6 +168,7 @@ div#btn-counter-box {
 p#contador {
 	display: inline-block;
 	margin-right: 0.2em;
+	font-weight: 700;
 }
 
 button.btn-tweet {

@@ -40,6 +40,21 @@ inputTweet.addEventListener('input', function(){
 		
 	}
 
+	if(inputLength > 140 ){
+		tweet.disabled = true;
+		tweet.style.backgroundColor = "gray";
+		tweet.style.cursor = "no-drop";
+		counter.style.color = 'red';
+	}else if(inputLength > 120 & inputLength < 130){
+		counter.style.color = 'blue';
+	}else if(inputLength > 130){
+		counter.style.color = 'orange';
+	}else if(inputLength > 0 & inputLength < 120){
+		counter.style.color = 'black';
+	}
+
+
+
 });
 
 
@@ -91,19 +106,20 @@ tweet.addEventListener('click', function(){
 			tweet.style.backgroundColor = "gray";
 			tweet.style.cursor = "no-drop";
 		}else{
-		var limiteTweet = 140;
+			var limiteTweet = 140;
 
-		var conteoInverso = limiteTweet - inputLength;
-			var counter = document.getElementById('contador');
-			var textCounter = document.createTextNode(conteoInverso);
-			counter.appendChild(textCounter);
+			var conteoInverso = limiteTweet - inputLength;
+				var counter = document.getElementById('contador');
+				var textCounter = document.createTextNode(conteoInverso);
+				counter.appendChild(textCounter);
 
-		inputTweet.addEventListener('keydown', function(){
-			textCounter.textContent = '';
-			console.log(textCounter);
-		});
-		
-	}
+			inputTweet.addEventListener('keydown', function(){
+				textCounter.textContent = '';
+			});
+
+			console.log('conte inverso '+textCounter);
+			
+		}
 
 	});
 
